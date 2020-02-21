@@ -3,6 +3,9 @@
 ## DESIGN FILE
 https://www.figma.com/file/lmbScjC2gSBHWIPw820PP0/JobSearch
 
+## TRELLO BOARD
+https://trello.com/b/IhewQ4VG
+
 ## PITCH
 Keep track of where you've applied, who you've talked to, and follow ups you need to make. Create a resume and keep it updated. 
 
