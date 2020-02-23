@@ -1,14 +1,11 @@
 //mike
 //.less card code
-*{
-    border: 1px solid black !important;
-}
 .container {
 
     header{
         img{
             width:100%;
-            height: 20rem;
+            height: 30rem;
         }
     }
     .search-bars {
@@ -21,43 +18,50 @@
         input {
             padding: 1% 1%;
         }
+        button {
+            .navbutton(18%, @nav-background, @nav-font-color);
+            padding: .5% 2%;
+            margin: 0 2%;
+        }
     }
     .cards {
         width: 100%;
         height: 100%;
         display:flex;
-        padding: 5% 0;
+        padding: 2% 3% 10% 3%;
         
     .resume{
         .custom-direction(column,center);
         justify-content: center;
-        margin: 0 5%;
+        margin: 0 2%;
         background-color: @bg-color-cards;
+        padding: 0 4%;
         img{
             width:80%;
             height:40%;
         }
         p {
+            width:90%;
             padding: 10% 0;
         }
         button {
-            .navbutton(100%, @nav-background, @nav-font-color);
+            .navbutton(79%, @nav-background, @nav-font-color);
             }
     }
 
     .track-info{
         .custom-direction(column,center);
         justify-content: center;
-        margin: 0 5%;
+        margin: 0 2%;
         background-color: @bg-color-cards;
-        padding: 0 2%;
+        padding: 0 5%;
         img{
             width:100%;
             height:40%;
         }
         p {
-            display:flex;
             padding: 10% 20%;
+            width:100%;
         }
         button {
             .navbutton(100%, @nav-background, @nav-font-color);
@@ -67,7 +71,7 @@
     .recruiter-contact{
         .custom-direction(column,center);
         justify-content: center;
-        margin: 0 5%;
+        margin: 0 2%;
         background-color: @bg-color-cards;
         img{
             width:70%;
@@ -77,10 +81,10 @@
             padding: 10% 0;
         }
         button {
-            .navbutton(100%, @nav-background, @nav-font-color);     
+            .navbutton(70%, @nav-background, @nav-font-color);     
             }
             p{
-                font-size: 1.5rem;
+
             }
                
     }//recruiter-contact
