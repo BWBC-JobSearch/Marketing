@@ -1,4 +1,18 @@
-// flexmixin
+
+//mike's Mixins
+.custom-flex(@justify,@align){
+    display:flex;
+    justify-content:@justify;
+    align-items:@align;
+}
+.custom-direction(@direction,@align){
+    display:flex;
+    flex-direction: @direction;
+    align-items: @align;
+}
+//end of Michail's mixins
+
+// Begin Robert's Mixins
 .flex(@justify, @align){
     display: flex;
     justify-content: @justify;
@@ -21,3 +35,4 @@
         background-color: @color2;
     }
 }
+
