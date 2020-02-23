@@ -1,0 +1,25 @@
+//this is just a container that will make our nav stay at the top of our screen
+.sticky-nav{
+    position: sticky;
+    top: 0;
+}
+
+//stored whole navebar in one class
+.navcontainer{
+    .flex(space-between, center);
+    width: 100%;
+    padding: 2% 5%;
+    background-color: @nav-background;
+    color:@nav-font-color;
+    h1{
+        font-size: x-large;
+    }//end h1
+    nav{
+        .flex(space-evenly, center);
+        width: 70%;
+
+        a{
+            .navbutton(20%, @nav-background, @nav-font-color);
+        }//end a
+    }//end nav
+}//end navcontainer

@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -132,15 +133,29 @@ table {
 html {
   font-size: 62.5%;
 }
+
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+/*card css*/
 .container .cards {
   width: 100%;
   height: 100%;
@@ -187,4 +202,40 @@ img {
 }
 .container .cards .recruiter-contact img p {
   font-size: 1.5rem;
+  
+/* begin nav css*/
+.sticky-nav {
+  position: sticky;
+  top: 0;
 }
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2% 5%;
+  background-color: #44CF6C;
+  color: #6C464E;
+}
+.navcontainer h1 {
+  font-size: x-large;
+}
+.navcontainer nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+.navcontainer nav a {
+  width: 20%;
+  background-color: #44CF6C;
+  color: #6C464E;
+  font-family: ('Odibee Sans');
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  padding: 3% 0;
+}
+.navcontainer nav a:hover {
+  background-color: #beeecc;
+  }
