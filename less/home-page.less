@@ -1,48 +1,88 @@
 //mike
 //.less card code
-
+*{
+    border: 1px solid black !important;
+}
 .container {
+
+    header{
+        img{
+            width:100%;
+            height: 20rem;
+        }
+    }
+    .search-bars {
+        .custom-flex(flex-start,flex-start);
+        padding: 2%;
+        label {
+            padding: 1% 1%;
+            font-size: 2rem;
+        }
+        input {
+            padding: 1% 1%;
+        }
+    }
     .cards {
         width: 100%;
         height: 100%;
         display:flex;
+        padding: 5% 0;
+        
     .resume{
         .custom-direction(column,center);
+        justify-content: center;
         margin: 0 5%;
+        background-color: @bg-color-cards;
         img{
             width:80%;
             height:40%;
-        button {
-            width: 50%;
-            }
         }
+        p {
+            padding: 10% 0;
+        }
+        button {
+            .navbutton(100%, @nav-background, @nav-font-color);
+            }
     }
 
     .track-info{
         .custom-direction(column,center);
+        justify-content: center;
         margin: 0 5%;
+        background-color: @bg-color-cards;
+        padding: 0 2%;
         img{
             width:100%;
             height:40%;
-        button {
-            width: 100%;
-            }
         }
+        p {
+            display:flex;
+            padding: 10% 20%;
+        }
+        button {
+            .navbutton(100%, @nav-background, @nav-font-color);
+            }
     }
 
     .recruiter-contact{
         .custom-direction(column,center);
+        justify-content: center;
         margin: 0 5%;
+        background-color: @bg-color-cards;
         img{
             width:70%;
             height:40%;
+        }
+        p {
+            padding: 10% 0;
+        }
         button {
-            width: 100%;      
+            .navbutton(100%, @nav-background, @nav-font-color);     
             }
             p{
                 font-size: 1.5rem;
             }
-        }       
+               
     }//recruiter-contact
  }//cards
 
