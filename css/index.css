@@ -164,6 +164,13 @@ img {
   background-color: #44CF6C;
   color: #6C464E;
 }
+@media (max-width: 500px) {
+  .navcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .navcontainer h1 {
   font-family: 'Montserrat';
   font-size: x-large;
@@ -173,6 +180,13 @@ img {
   justify-content: space-evenly;
   align-items: center;
   width: 70%;
+}
+@media (max-width: 500px) {
+  .navcontainer nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .navcontainer nav a {
   width: 20%;
@@ -186,6 +200,14 @@ img {
 }
 .navcontainer nav a:hover {
   background-color: #beeecc;
+}
+@media (max-width: 500px) {
+  .navcontainer nav a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px dashed black;
+  }
 }
 .container .cards {
   width: 100%;
@@ -233,4 +255,108 @@ img {
 }
 .container .cards .recruiter-contact img p {
   font-size: 1.5rem;
+}
+.sign-in-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.sign-in-container h1 {
+  width: 100%;
+  text-align: center;
+  margin: 2%;
+  border-bottom: 2px solid #6C464E;
+  font-size: x-large;
+}
+.sign-in-container form {
+  font-size: large;
+}
+.sign-in-container form input[type=text] {
+  width: 100%;
+  padding: 4%;
+  margin: 3% 0;
+  box-sizing: border-box;
+}
+.sign-in-container .sign-in-button {
+  width: 50%;
+  background-color: #32A287;
+  color: #6C464E;
+  font-family: 'Odibee Sans';
+  text-decoration: none;
+  font-size: large;
+  padding: 3% 0;
+  padding: 1%;
+  margin: 1% 0;
+  text-align: center;
+}
+.sign-in-container .sign-in-button:hover {
+  background-color: #90ddca;
+}
+.sign-in-container .sign-up-button {
+  width: 50%;
+  background-color: #32A287;
+  color: #6C464E;
+  font-family: 'Odibee Sans';
+  text-decoration: none;
+  font-size: large;
+  padding: 3% 0;
+  padding: 1%;
+  margin: 3% 0;
+  text-align: center;
+}
+.sign-in-container .sign-up-button:hover {
+  background-color: #90ddca;
+}
+.myjobs-heading {
+  width: 100%;
+  text-align: center;
+  margin-top: 1%;
+  border-bottom: 2px solid #6C464E;
+}
+.job-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.job-card-container .job-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #A9FDAC;
+  width: 90%;
+  padding: 2%;
+  border: 1px solid #6C464E;
+  margin: 2%;
+}
+.job-card-container .job-card i {
+  text-align: center;
+  font-size: x-large;
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .job-card-container .job-card i {
+    width: 10%;
+  }
+}
+.job-card-container .job-card p {
+  width: 60%;
+}
+.job-card-container .job-card .job-button {
+  width: 10%;
+  background-color: #32A287;
+  color: #6C464E;
+  font-family: 'Odibee Sans';
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  padding: 3% 0;
+  padding: 1%;
+  border: none;
+}
+.job-card-container .job-card .job-button:hover {
+  background-color: #90ddca;
 }

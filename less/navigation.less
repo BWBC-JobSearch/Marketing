@@ -11,6 +11,9 @@
     padding: 2% 5%;
     background-color: @nav-background;
     color:@nav-font-color;
+    @media @mobile{
+        .mediamode();
+    }
     h1{
         font-family: @nav-title-font;
         font-size: x-large;
@@ -18,9 +21,16 @@
     nav{
         .flex(space-evenly, center);
         width: 70%;
+        @media @mobile{
+            .mediamode();
+        }
 
         a{
             .navbutton(20%, @nav-background, @nav-font-color);
+            @media @mobile{
+                .mediamode();
+                border-bottom: 1px dashed black;
+            }
         }//end a
     }//end nav
 }//end navcontainer

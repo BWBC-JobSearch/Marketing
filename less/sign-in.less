@@ -1,0 +1,46 @@
+.sign-in-container{
+    .flex(space-around, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    h1{
+    width:100%;
+    text-align: center;
+    margin:2%;
+    border-bottom: 2px solid @my-job-card-border;
+    font-size: x-large;
+    }
+
+    form{
+        font-size: large;
+        input[type=text] {
+        width: 100%;
+        padding: 4%;
+        margin: 3% 0;
+        box-sizing: border-box;
+        }
+    }
+
+    .sign-in-button{
+        .navbutton(50%, @sign-in-button-color, @nav-font-color);
+        padding: 1%;
+        margin: 1% 0;
+        text-align: center;
+        // @media @mobile{
+        //     .mediamode();
+        //     text-align: center;
+        // }
+
+    }
+    .sign-up-button{
+        .navbutton(50%, @sign-in-button-color, @nav-font-color);
+        padding: 1%;
+        margin: 3% 0;
+        text-align: center;
+        // @media @mobile{
+        //     .mediamode();
+        //     text-align: center;
+        // }
+    }
+
+}
