@@ -1,0 +1,37 @@
+.myjobs-heading{
+    width:100%;
+    text-align: center;
+    margin-top: 1%;
+    border-bottom: 2px solid @my-job-card-border;
+}
+
+.job-card-container{
+    .flex(center, center);
+    flex-direction: column;
+    width: 100%;
+    .job-card{
+        .flex(space-between, center);
+        background-color: @my-job-card-color;
+        width: 90%;
+        padding: 2%;
+        border: 1px solid @my-job-card-border;
+        margin: 2%;
+        i{
+            text-align: center;
+            font-size: x-large;
+            width: 20%;
+            @media @mobile{
+                width:10%;
+            }
+        }
+        p{
+            width:60%;
+        }
+        .job-button{
+            .navbutton(10%, @my-job-button-color, @my-job-button-font);
+            padding:1%;
+            border:none;
+
+        }
+    }
+}
